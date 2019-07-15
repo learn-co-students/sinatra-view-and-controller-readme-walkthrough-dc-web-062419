@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
-describe "App" do
+describe 'App' do
   describe 'POST /reverse' do
     it 'responds with a 200' do
       params = {
-        :string => 'Super Silly String'
+        string: 'Super Silly String'
       }
 
       post '/reverse', params
@@ -14,7 +16,7 @@ describe "App" do
 
     it 'displays the reversed string' do
       params = {
-        :string => 'Super Silly String'
+        string: 'Super Silly String'
       }
 
       post '/reverse', params
